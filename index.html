@@ -10,6 +10,7 @@
 
 <body>
     <div class="container justify-content-center mt-5 ">
+        <!--Payment form example-->
         <div class="col-md-12 ">
             <div class="card card-outline-secondary">
                 <div class="card-header p-3"
@@ -17,6 +18,7 @@
                     <h3 class="mb-0">Payment form example</h3>
                 </div>
 
+                <!--Alerta-->
                 <div class="row mt-2 p-3">
                     <div class="col-md-12 ">
                         <div class="alert alert-danger" role="alert">
@@ -24,39 +26,45 @@
                         </div>
                     </div>
                 </div>
-
+                <!--cuerpo del formulario-->
                 <form>
+                    <!--num tarjeta-->
                     <div class="row mb-3 p-3">
                         <div class="col-sm-4 col-md-5">
                             <label for="cardNumber" class="form-label">Card #</label>
                             <input type="text" class="form-control" id="cardNumber" placeholder="XXXXXXXXXXXXXXXX">
                         </div>
+                        <!--CVC-->
                         <div class="col-sm-4 col-md-2 mt-3 mt-md-0">
                             <label for="cvcNumber" class="form-label">CVC #</label>
                             <input type="text" class="form-control" id="cvcNumber" placeholder="0000">
                         </div>
+                        <!--cantidad-->
                         <div class="col-sm-4 col-md-5 mt-3 mt-md-0">
                             <label for="amount" class="form-label">Amount</label>
                             <input type="text" class="form-control" id="amount" placeholder="$ Amount">
                         </div>
                     </div>
-
+                    <!--nombre-->
                     <div class="row mb-3 p-3">
                         <div class="col-sm-12 col-md-6">
                             <label for="firstName" class="form-label">First Name</label>
                             <input type="text" class="form-control" id="firstName" placeholder="First Name">
                         </div>
+
+                        <!--apellido-->
                         <div class="col-sm-12 col-md-6 mt-3 mt-md-0">
                             <label for="lastName" class="form-label">Last Name</label>
                             <input type="text" class="form-control" id="lastName" placeholder="Last Name">
                         </div>
                     </div>
-
+                    <!--ciudad-->
                     <div class="row mb-3 p-3">
                         <div class="col-sm-12 col-md-6">
                             <label for="city" class="form-label">City</label>
                             <input type="text" class="form-control" id="city" placeholder="City">
                         </div>
+                        <!--selección de estado-->
                         <div class="col-sm-12 col-md-3 mt-3 mt-md-0">
                             <label for="state" class="form-label">State</label>
                             <select id="state" class="form-select">
@@ -65,15 +73,16 @@
                                 <option value="NY">New York</option>
                                 <option value="TX">Texas</option>
                                 <option value="FLO">Florida</option>
-                                
+
                             </select>
                         </div>
+                        <!--código postal-->
                         <div class="col-sm-12 col-md-3 mt-3 mt-md-0">
                             <label for="postalCode" class="form-label">Postal Code</label>
                             <input type="text" class="form-control" id="postalCode" placeholder="Postal Code">
                         </div>
                     </div>
-
+                    <!--botones tarjetas-->
                     <div class="row mb-3 p-3">
                         <div class="col-6">
                             <label class="form-label">We accept:</label>
@@ -99,6 +108,7 @@
 
                             </div>
                         </div>
+                        <!--mensaje-->
                         <div class="col-6">
                             <label for="message" class="form-label">Message</label>
                             <textarea class="form-control" id="message" rows="3"></textarea>
@@ -106,7 +116,7 @@
                         </div>
 
                     </div>
-
+                    <!--cancel y send-->
                     <div class="d-flex col-12 justify-content-end p-3"
                         style="background-color: rgb(233, 233, 233); border-top: 1px solid #ccc;">
                         <button type="button" class="btn btn-secondary me-2">Cancel</button>
