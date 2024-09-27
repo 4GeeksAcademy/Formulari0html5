@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Payment Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container justify-content-center mt-5 ">
+        <div class="col-md-12 ">
+            <div class="card card-outline-secondary">
+                <div class="card-header p-3"
+                    style="background-color: rgb(233, 233, 233);border-bottom: 1px solid #ccc;">
+                    <h3 class="mb-0">Payment form example</h3>
+                </div>
+
+                <div class="row mt-2 p-3">
+                    <div class="col-md-12 ">
+                        <div class="alert alert-danger" role="alert">
+                            Some fields are missing
+                        </div>
+                    </div>
+                </div>
+
+                <form>
+                    <div class="row mb-3 p-3">
+                        <div class="col-sm-4 col-md-5">
+                            <label for="cardNumber" class="form-label">Card #</label>
+                            <input type="text" class="form-control" id="cardNumber" placeholder="XXXXXXXXXXXXXXXX">
+                        </div>
+                        <div class="col-sm-4 col-md-2 mt-3 mt-md-0">
+                            <label for="cvcNumber" class="form-label">CVC #</label>
+                            <input type="text" class="form-control" id="cvcNumber" placeholder="0000">
+                        </div>
+                        <div class="col-sm-4 col-md-5 mt-3 mt-md-0">
+                            <label for="amount" class="form-label">Amount</label>
+                            <input type="text" class="form-control" id="amount" placeholder="$ Amount">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3 p-3">
+                        <div class="col-sm-12 col-md-6">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                        </div>
+                        <div class="col-sm-12 col-md-6 mt-3 mt-md-0">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3 p-3">
+                        <div class="col-sm-12 col-md-6">
+                            <label for="city" class="form-label">City</label>
+                            <input type="text" class="form-control" id="city" placeholder="City">
+                        </div>
+                        <div class="col-sm-12 col-md-3 mt-3 mt-md-0">
+                            <label for="state" class="form-label">State</label>
+                            <select id="state" class="form-select">
+                                <option selected>Pick a state</option>
+                                <option value="CA">California</option>
+                                <option value="NY">New York</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-12 col-md-3 mt-3 mt-md-0">
+                            <label for="postalCode" class="form-label">Postal Code</label>
+                            <input type="text" class="form-control" id="postalCode" placeholder="Postal Code">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3 p-3">
+                        <div class="col-6">
+                            <label class="form-label">We accept:</label>
+                            <div>
+                                <div class="btn-group" data-toggle="buttons">
+                                    <label class="btn btn-secondary">
+                                        <input autocomplete="off" checked id="blue" name="options" type="radio">
+                                        <i class="fa-brands fa-cc-mastercard"></i>
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                        <input autocomplete="off" id="red" name="options" type="radio">
+                                        <i class="fa-brands fa-cc-visa"></i>
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                        <input autocomplete="off" id="green" name="options" type="radio">
+                                        <i class="fa-brands fa-cc-paypal"></i>
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                        <input autocomplete="off" id="yellow" name="options" type="radio">
+                                        <i class="fa-brands fa-cc-amex"></i>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                            <small class="form-text text-muted">Add any notes here.</small>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex col-12 justify-content-end p-3"
+                        style="background-color: rgb(233, 233, 233); border-top: 1px solid #ccc;">
+                        <button type="button" class="btn btn-secondary me-2">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
